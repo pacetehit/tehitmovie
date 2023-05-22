@@ -13,7 +13,7 @@ $(".search-button").on("click", function () {
       $(".detail-button").on("click", function () {
         $.ajax({
           url:
-            "http://www.omdbapi.com/?apikey=b64942e5&i=" +
+            "https://www.omdbapi.com/?apikey=b64942e5&i=" +
             $(this).data("imdbid"),
           success: (m) => {
             const movieDetail = showDetails(m);
