@@ -1,7 +1,7 @@
 $(".search-button").on("click", function () {
   $.ajax({
     url:
-      "http://www.omdbapi.com/?apikey=b64942e5&s=" + $(".input-keyword").val(),
+      "https://www.omdbapi.com/?apikey=b64942e5&s=" + $(".input-keyword").val(),
     success: (results) => {
       const movies = results.Search;
       let cards = "";
